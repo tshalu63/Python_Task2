@@ -1,9 +1,5 @@
 def reverse_number(num):
-    rev = 0
-    while num > 0:
-        rev = rev * 10 + num % 10
-        num //= 10
+    rev = int(str(num)[::-1])  # Convert to string, reverse, then convert back to int
     return rev
 
-# Example
-print("Reversed:", reverse_number(2314))  # 4132
+print("Reversed:", reverse_number(2314))  # Should output: Reversed: 4132
