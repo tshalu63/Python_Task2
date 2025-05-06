@@ -5,5 +5,5 @@ def sum_of_digits(num):
         num //= 10
     return total
 
-# Example
+
 print("Sum of digits:", sum_of_digits(1234))  # Output: 10

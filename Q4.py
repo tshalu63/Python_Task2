@@ -6,5 +6,5 @@ def is_prime(num):
             return False
     return True
 
-# Example
+
 print("Is 7 prime?", is_prime(7))

@@ -3,5 +3,5 @@ def is_armstrong(num):
     power = len(digits)
     return num == sum(d ** power for d in digits)
 
-# Example
+
 print("Is Armstrong:", is_armstrong(153))  # True

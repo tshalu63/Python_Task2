@@ -10,5 +10,3 @@ def get_positive_number():
         except ValueError:
             print("Please enter a valid integer.")
 
-# Uncomment to run:
-# get_positive_number()
