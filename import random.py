@@ -1,5 +1,6 @@
 import random
 
+
 def get_user_choice():
     choice = input("Enter Rock, Paper or Scissors: ").lower()
     while choice not in ["rock", "paper", "scissors"]:
@@ -7,8 +8,10 @@ def get_user_choice():
         choice = input("Enter Rock, Paper or Scissors: ").lower()
     return choice
 
+
 def get_computer_choice():
     return random.choice(["rock", "paper", "scissors"])
+
 
 def determine_winner(user, computer):
     print(f"\nYou chose: {user}")
@@ -23,6 +26,7 @@ def determine_winner(user, computer):
     else:
         return "You lose!"
 
+
 def play_game():
     print("=== Welcome to Rock, Paper, Scissors Game ===")
     while True:
@@ -35,5 +39,6 @@ def play_game():
         if play_again != 'yes':
             print("Thanks for playing! Goodbye.")
             break
+
 
 play_game()
